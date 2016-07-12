@@ -1,0 +1,10 @@
+<h1>Enter your workout details</h1>
+
+<%= simple_form_for @workout do |f| %>
+  <%= f.input :date %>
+  <%= f.input :activity %>
+  <%= f.input :mood %>
+  <%= f.input :duration %>
+  <br />
+  <%= f.submit 'Create', class: 'btn btn-primary' %>
+<% end %>
