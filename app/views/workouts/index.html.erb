@@ -1,1 +1,12 @@
 <h1>Welcome to my Workout Log</h1>
+
+<% @workouts.each do |workout| %>
+  <div>
+    <h2><%= workout.activity %></h2>
+    <i><%= workout.date %></i>
+    <p><%= workout.mood %></p>
+    <p><%= workout.duration %></p>
+  </div>
+
+  <hr />
+<% end %>
