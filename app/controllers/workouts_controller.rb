@@ -9,8 +9,16 @@ class WorkoutsController < ApplicationController
   end
 
   def create
-    Workout.create(workout_params)
-    redirect_to root_path
+    @workout = Workout.create(workout_params)
+    if @workout.save
+      redirect_to @workout
+    else
+      render 'new'
+    end
+  end
+
+  def show
+    @workout = Workout.find(params[:id])
   end
 
   private
