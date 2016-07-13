@@ -1,11 +1,14 @@
-<h1>Edit your workout</h1>
+<div class="text-center">
+  <h1>Edit this workout</h1>
+</div>
 
 <%= simple_form_for @workout do |f| %>
+  <br />
   <%= f.input :date %>
   <br />
   <%= f.input :activity, input_html: { class: 'form-control' } %>
   <%= f.input :mood, input_html: { class: 'form-control' } %>
   <%= f.input :duration, input_html: { class: 'form-control' } %>
   <br />
-  <%= f.submit 'Update', class: 'btn btn-primary' %>
+  <%= f.submit 'Update', class: 'btn btn-warning btn-sm' %>
 <% end %>
