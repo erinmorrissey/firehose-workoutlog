@@ -7,6 +7,8 @@ Workoutlog::Application.routes.draw do
 
   root 'workouts#index'
 
+  get 'about', to: 'workouts#about'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

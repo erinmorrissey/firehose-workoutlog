@@ -4,6 +4,9 @@ class WorkoutsController < ApplicationController
     @workouts = Workout.all.order("date DESC")
   end
 
+  def about
+  end
+  
   def new
     @workout = Workout.new
   end
