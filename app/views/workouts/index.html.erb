@@ -1,12 +1,14 @@
-<h1>Welcome to my Workout Log</h1>
+<div id="index">
 
-<% @workouts.each do |workout| %>
-  <div>
-    <h2><%= workout.activity %></h2>
-    <i><%= workout.date.strftime("%A, %B %d") %></i>
-    <p><%= workout.mood %></p>
-    <p><%= workout.duration %></p>
-  </div>
+  <% @workouts.each do |workout| %>
+    <div>
+      <h2><%= link_to workout.activity, workout_path(workout) %></h2>
+      <p><%= workout.date.strftime("%A, %B %d") %></p>
+      <p><span>feeling:</span> <%= workout.mood %></p>
+      <p><span>length:</span> <%= workout.duration %></p>
+    </div>
 
-  <hr />
-<% end %>
+    <hr />
+  <% end %>
+
+</div>

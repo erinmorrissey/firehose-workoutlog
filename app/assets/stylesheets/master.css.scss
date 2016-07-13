@@ -1,2 +1,56 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,800|Titillium+Web';
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size:15px;
+  background: #F1F2B5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #F1F2B5 , #135058); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #F1F2B5 , #135058); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar-header, .navbar-brand {
+  float: none;
+}
+
+.navbar-brand {
+  font-family: 'Titillium Web', sans-serif;
+  text-transform: lowercase;
+  font-size:28px;
+  line-height: 75px;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-size: 45px;
+    line-height:105px;
+  }
+}
+
+.navbar > .container .navbar-brand {
+  margin:0;
+}
+
+.navbar .btn {
+  margin:0 40px 40px;
+}
+
+#index h2, #show h2 {
+  font-family: 'Titillium Web', sans-serif;
+  font-size:36px;
+}
+
+#index h2 a {
+  color: #FFFFFF;
+}
+
+#index p, #show p {
+  margin:5px 0;
+}
+
+#index p span, #show p span {
+  font-weight: 800;
+}
