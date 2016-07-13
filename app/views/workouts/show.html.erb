@@ -2,7 +2,7 @@
 
   <div>
     <h2><%= @workout.activity %></h2>
-    <i><%= @workout.date %></i>
+    <i><%= @workout.date.strftime("%A, %B %d") %></i>
     <p><%= @workout.mood %></p>
     <p><%= @workout.duration %></p>
   </div>
